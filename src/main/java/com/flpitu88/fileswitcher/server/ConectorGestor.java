@@ -9,10 +9,10 @@ import java.io.ObjectOutputStream;
 import java.util.LinkedList;
 import java.util.Properties;
 
-import com.flpitu88.fileSwitcher.colecciones.ListaPaths;
-import com.flpitu88.fileSwitcher.colecciones.ReprArchivo;
+import com.flpitu88.fileswitcher.colecciones.ListaPaths;
+import com.flpitu88.fileswitcher.colecciones.ReprArchivo;
 
-import com.flpitu88.fileSwitcher.utilitarios.Archivo;
+import com.flpitu88.fileswitcher.utilitarios.Archivo;
 import com.flpitu88.fileswitcher.gestorpaths.MenuGestor;
 import com.flpitu88.fileswitcher.gestorpaths.PathGuardar;
 import com.flpitu88.fileswitcher.gestorpaths.PathUsuario;

@@ -7,8 +7,8 @@ package com.flpitu88.fileswitcher.server;
  */
 
 
-import com.flpitu88.fileSwitcher.colecciones.ListaPaths;
-import com.flpitu88.fileSwitcher.colecciones.ReprArchivo;
+import com.flpitu88.fileswitcher.colecciones.ListaPaths;
+import com.flpitu88.fileswitcher.colecciones.ReprArchivo;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -18,16 +18,16 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.net.SocketException;
 
-import com.flpitu88.fileSwitcher.mensajes.MensajeArchivosGuardar;
-import com.flpitu88.fileSwitcher.mensajes.MensajeArchivosRecuperar;
-import com.flpitu88.fileSwitcher.mensajes.MensajeChequeoSocket;
-import com.flpitu88.fileSwitcher.mensajes.MensajeConfirTransferencia;
-import com.flpitu88.fileSwitcher.mensajes.MensajeNuevoUsuario;
-import com.flpitu88.fileSwitcher.mensajes.MensajePedidoGuardar;
-import com.flpitu88.fileSwitcher.mensajes.MensajePedidoRecuperar;
-import com.flpitu88.fileSwitcher.mensajes.MensajePresentacion;
-import com.flpitu88.fileSwitcher.utilitarios.Archivo;
-import com.flpitu88.fileSwitcher.utilitarios.Logueo;
+import com.flpitu88.fileswitcher.mensajes.MensajeArchivosGuardar;
+import com.flpitu88.fileswitcher.mensajes.MensajeArchivosRecuperar;
+import com.flpitu88.fileswitcher.mensajes.MensajeChequeoSocket;
+import com.flpitu88.fileswitcher.mensajes.MensajeConfirTransferencia;
+import com.flpitu88.fileswitcher.mensajes.MensajeNuevoUsuario;
+import com.flpitu88.fileswitcher.mensajes.MensajePedidoGuardar;
+import com.flpitu88.fileswitcher.mensajes.MensajePedidoRecuperar;
+import com.flpitu88.fileswitcher.mensajes.MensajePresentacion;
+import com.flpitu88.fileswitcher.utilitarios.Archivo;
+import com.flpitu88.fileswitcher.utilitarios.Logueo;
 
 /**
  * 

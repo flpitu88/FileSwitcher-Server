@@ -3,26 +3,31 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.flpitu88.fileswitcher.server.view;
+package com.flpitu88.fileswitcher.server.servicios;
+
+import com.flpitu88.fileswitcher.gestorpaths.PathUsuario;
+import java.util.List;
 
 /**
  *
- * @author flpitu88
+ * @author flavio
  */
-public class VistaConsola implements Vista {
+public class UsuariosFSDAOObject implements UsuariosFSDAO {
 
+    private List<PathUsuario> usuarios;
+    
     @Override
-    public void imprimirInfo(String message) {
+    public void iniciarUsuariosDAO(String path) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void imprimirError(String message) {
+    public boolean existeUsuario(String usuario) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void imprimirStatus(String message) {
+    public void guardarUsuarios() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

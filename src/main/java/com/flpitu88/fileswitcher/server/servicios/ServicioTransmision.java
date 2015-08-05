@@ -7,10 +7,8 @@ package com.flpitu88.fileswitcher.server.servicios;
 
 /**
  *
- * @author flpitu88
+ * @author flavio
  */
-public interface ServicioPaths {
-    
-    
+public class ServicioTransmision {
     
 }

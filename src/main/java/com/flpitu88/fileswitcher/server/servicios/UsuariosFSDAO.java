@@ -7,12 +7,13 @@ package com.flpitu88.fileswitcher.server.servicios;
 
 /**
  *
- * @author flpitu88
+ * @author flavio
  */
-public interface PathsDAO {
+public interface UsuariosFSDAO {
     
-    public void cargarListaPaths(String path);
+    public void iniciarUsuariosDAO(String path);
     
-    public void cargarListaUsuarios(String path);
+    public boolean existeUsuario(String usuario);
     
+    public void guardarUsuarios();
 }

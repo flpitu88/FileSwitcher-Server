@@ -5,10 +5,14 @@
  */
 package com.flpitu88.fileswitcher.server.servicios;
 
+import java.net.Socket;
+
 /**
  *
- * @author flpitu88
+ * @author flavio
  */
-public class ServicioPathsImpl implements ServicioPaths {
+public interface Conexion {
+    
+    public Socket conectarse();
     
 }

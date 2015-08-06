@@ -5,7 +5,8 @@
  */
 package com.flpitu88.fileswitcher.server.servicios;
 
-import com.flpitu88.fileswitcher.colecciones.ListaPaths;
+
+import com.flpitu88.fileSwitcher.colecciones.ListaPaths;
 import com.flpitu88.fileswitcher.gestorpaths.PathGuardar;
 import java.util.List;
 

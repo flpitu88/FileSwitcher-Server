@@ -12,7 +12,9 @@ import java.net.Socket;
  * @author flavio
  */
 public interface Conexion {
+
+    public String getIpConexion();
     
-    public Socket conectarse();
-    
+    public Socket getSocket();
+
 }

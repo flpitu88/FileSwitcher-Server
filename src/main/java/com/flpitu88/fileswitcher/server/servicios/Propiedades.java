@@ -18,24 +18,14 @@ public class Propiedades {
 
     private Properties config;
 
-    public Propiedades() {
+    public Propiedades() throws IOException {
         this.config = cargarProperties();
     }
 
-    private Properties cargarProperties() {
+    private Properties cargarProperties() throws FileNotFoundException, IOException {
         Properties conf = new Properties();
-        try {
-            // Cargo el archivo en la ruta especificada
-            conf.load(new FileInputStream("serverConfig.properties"));
-        } catch (FileNotFoundException e) {
-            System.err.println("Error, El archivo de configuracion no existe");
-            System.exit(0);
-        } catch (IOException e) {
-            System.err
-                    .println("Error, No se puede leer el archivo de configuracion");
-            System.exit(0);
-        }
-        return config;
+        conf.load(new FileInputStream("serverConfig.properties"));
+        return conf;
     }
 
     public Properties getConfig() {
@@ -44,6 +34,30 @@ public class Propiedades {
 
     public void setConfig(Properties config) {
         this.config = config;
+    }
+
+    public String getDirDeLog() {
+        return config.getProperty("logServ");
+    }
+
+    public int getPuertoServidor() {
+        return Integer.parseInt(config.getProperty("serverPort"));
+    }
+
+    public boolean guardadoInicial() {
+        boolean resul = false;
+        String guarIni = config.getProperty(
+                "guardadoInicial");
+        if (guarIni.equalsIgnoreCase("si")) {
+            resul = true;
+        } else {
+            resul = false;
+        }
+        return resul;
+    }
+
+    public int getMaximoTamTransfer() {
+        return Integer.parseInt(config.getProperty("maxTotalSize"));
     }
 
 }

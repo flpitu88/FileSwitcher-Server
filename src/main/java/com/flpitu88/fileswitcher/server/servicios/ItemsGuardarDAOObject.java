@@ -5,19 +5,16 @@
  */
 package com.flpitu88.fileswitcher.server.servicios;
 
-import com.flpitu88.fileSwitcher.colecciones.ListaPaths;
+import com.flpitu88.fileswitcher.colecciones.ListaPaths;
 import com.flpitu88.fileswitcher.gestorpaths.PathGuardar;
-import com.flpitu88.fileswitcher.gestorpaths.PathUsuario;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Properties;
 
 /**
  *
  * @author flpitu88
  */
 public class ItemsGuardarDAOObject implements ItemsGuardarDAO {
-    
+
     private List<PathGuardar> items;
 
     @Override
@@ -44,6 +41,5 @@ public class ItemsGuardarDAOObject implements ItemsGuardarDAO {
     public void guardarItemsDAO() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
 
 }

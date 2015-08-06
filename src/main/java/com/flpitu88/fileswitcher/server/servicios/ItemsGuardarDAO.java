@@ -5,22 +5,22 @@
  */
 package com.flpitu88.fileswitcher.server.servicios;
 
-import com.flpitu88.fileSwitcher.colecciones.ListaPaths;
+import com.flpitu88.fileswitcher.colecciones.ListaPaths;
 
 /**
  *
  * @author flpitu88
  */
 public interface ItemsGuardarDAO {
-    
+
     public void iniciarItemsDAO(String path);
-    
+
     public ListaPaths consultaListadoItems();
-    
+
     public String obtenerPathUsuario(String usuario);
-    
+
     public String obtenerPathCliente(String cliente);
-    
+
     public void guardarItemsDAO();
-    
+
 }
